@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+
+  .navbar-brand {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    /* font-family: 'Ceviche One', cursive; */
+    font-family: 'Cookie', cursive;
+    /* font-weight: 900 */
+    font-size: 30px;
+ }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+    font-family: 'Zilla Slab', serif;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+
+
+  .content-section {
+    background: #ffffff;
+    padding: 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    /* white-space: pre-line; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-size: 14.4px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: justify;
+    height: auto;
+  }
+  
+  .article-img {
+    height: 125px;
+    width: 140px;
+    margin-right: 16px;
+  }
+  
+  
+  #article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    /* border-bottom: 1px solid #e3e3e3; */
+    font-family: 'Nunito Sans', sans-serif;
+     font-size: 11px;
+     position: relative;
+     top: -5px;
+  }
+
+  .article-description {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    /* border-bottom: 1px solid #e3e3e3; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+     position: relative;
+     top: -5px;
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: 42%;
+  }
+  .pagination a {
+    margin-left: 10px;
+  }
+
+  .about {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-size: 14px;
+    text-align: justify;
+  }
+  #search {
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    /* height: 35px; */
+  }
+  #search-btn {
+    outline: none;
+    box-shadow: none;
+    color: #cbd5db;
+    /* border: 1px solid #dddddd; */
+    background-color: #5f788a;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #search-btn:hover {
+    color: #ffffff;
+  }
+
+  .page-footer {
+    height: 70px;
+    text-align: center;
+  }
