@@ -1,0 +1,22 @@
+{% extends 'post/base.html' %}
+{% load static %}
+{% block title %}
+Random Post-About
+{% endblock %}
+
+{% block content %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{% static 'blog/about.png' %}" alt="">
+            <div class="media-body">
+                <div class="article-metadata" style="margin-top: 10px;">
+                    <h3>About!</h3>
+                    <p class="about">
+                        Random Post is created by a college student on 13 Oct, 2021 in attempt to post articles about some random stuff which 
+                        includes Gaming, Programming and Anime etc. The purpose of this blog is to give you some detail about things going 
+                        on in surrounding of mentioned categories and of course to make some money out of it. Anyways, keep rading my
+                        articles and if you find any typos and grammer mistakes, then you can ignore that!, So thats all. Hope you doing well pal ✌.
+                    </p>
+                </div>
+            </div>
+        </article>
+{% endblock %}

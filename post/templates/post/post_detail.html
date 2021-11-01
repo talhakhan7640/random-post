@@ -1,0 +1,38 @@
+{% extends 'post/base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'blog/post_detail.css' %}">
+{% endblock %}
+
+{% block title %}
+Random Post-{{post.title}}
+{% endblock %}
+
+
+
+{% block content %}
+    <article class="media content-section">
+        <div class="media-body">
+            <!-- <div class="article-metadata">
+                <span class="mr-2">{{ post.author }}</span>
+                <small class="text-muted">{{ post.posted_date }}</small>
+            </div> -->
+            <h3 class="article-title">{{ post.title }}</h3>
+            <h6 class="article-metadata">{{ post.description }}</h6>
+            <small class="text-muted" id="article-metadata">On {{ post.posted_date }}</small>
+            <!-- <small class="text-muted">{{ object.date_posted }}</small> -->
+                {% if object.author == user %}
+                    <div>
+                        <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}" >Update</a>
+                        <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}" >Delete</a>
+                    </div>
+                {% endif %}
+            <p class="article-content" id="article-detail">{{ post.content|safe }}</p>
+            <h4 class="article-title" id="video-title">{{ post.content_video_title }}</h4>
+            {% video post.content_video_url '100% x 378px' %}
+            <p class="article-content" id="article-detail">{{ post.content_after|safe }}</p>
+        </div>
+    </article>
+{% endblock %}
